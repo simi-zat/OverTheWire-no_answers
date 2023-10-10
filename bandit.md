@@ -1,0 +1,99 @@
+# Level 0
+
+`ssh bandit0@bandit.labs.overthewire.org -p 2220`, password: `bandit0`
+
+```
+cat readme
+```
+
+# Level 1
+
+`ssh bandit1@bandit.labs.overthewire.org -p 2220`
+
+```
+cat < -
+```
+
+# Level 2
+
+`ssh bandit2@bandit.labs.overthewire.org -p 2220`
+
+```
+cat spaces\ in\ this\ filename
+```
+
+# Level 3
+
+`ssh bandit3@bandit.labs.overthewire.org -p 2220`
+
+```
+cat inhere/.hidden
+```
+
+# Level 4
+
+`ssh bandit4@bandit.labs.overthewire.org -p 2220`
+
+```
+cat < inhere/-file00
+cat < inhere/-file01
+cat < inhere/-file02
+cat < inhere/-file03
+cat < inhere/-file04
+cat < inhere/-file05
+cat < inhere/-file06
+cat < inhere/-file07
+cat < inhere/-file08
+cat < inhere/-file09
+```
+
+# Level 5
+
+`ssh bandit5@bandit.labs.overthewire.org -p 2220`
+
+```
+cd inhere
+find ./ -size 1033c
+cat ./maybehere07/.file2
+```
+
+# Level 6
+
+`ssh bandit6@bandit.labs.overthewire.org -p 2220`
+
+```
+find / -size 33c /user bandit7
+cat /var/lib/dpkg/info/bandit7.password
+```
+
+# Level 7
+
+`ssh bandit7@bandit.labs.overthewire.org -p 2220`
+
+```
+grep millionth data.txt
+```
+
+# Level 8
+
+`ssh bandit8@bandit.labs.overthewire.org -p 2220`
+
+```
+sort data.txt | uniq -c | grep "1 "
+```
+
+# Level 9
+
+`ssh bandit9@bandit.labs.overthewire.org -p 2220`
+
+```
+grep -a === data.txt
+```
+
+# Level 10
+
+`ssh bandit10@bandit.labs.overthewire.org -p 2220`
+
+```
+base64 -d data.txt
+```

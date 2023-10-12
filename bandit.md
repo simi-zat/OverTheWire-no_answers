@@ -97,3 +97,94 @@ grep -a === data.txt
 ```
 base64 -d data.txt
 ```
+
+# Level 11
+
+`ssh bandit11@bandit.labs.overthewire.org -p 2220`
+
+```
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+```
+
+# Level 12
+
+`ssh bandit12@bandit.labs.overthewire.org -p 2220`
+
+```
+mktemp -d
+cp data.txt /temp/temp.XXX
+cd /temp/temp.XXX
+
+xxd -r data.txt > tmp
+
+file tmp
+mv tmp tmp.gz
+gunzip tmp.gz
+
+file tmp
+mv tmp tmp.bz2 
+bzip2 -d tmp.bz2
+
+file tmp
+mv tmp tmp.gz
+gunzip tmp.gz
+
+file tmp
+tar -xvf tmp
+tar -xvf data5.bin
+
+file data6.bin
+mv data6.bin data6.bz2
+bzip2 data6.bz2
+
+file data6
+tar -xvf data6
+
+file data8.bin
+mv data8.bin data8.gz
+gunzip data8.gz
+
+cat data8
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

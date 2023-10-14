@@ -147,9 +147,21 @@ gunzip data8.gz
 cat data8
 ```
 
+# Level 13
+
+`ssh bandit13@bandit.labs.overthewire.org -p 2220`
 
 
+# Level 14
 
+`ssh -i sshkey.private bandit14@localhost -p 2220`
+
+```
+cat /etc/bandit_pass/bandit14
+nc localhost 30000
+```
+
+# Level 15
 
 
 
